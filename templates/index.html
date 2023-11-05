@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="shortcut icon" type="image/png" href="/static/icon32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.7/css/all.min.css">
+    <!-- <script src="{{ url_for('static', filename='js/header.js') }}"></script> -->
     <title>Delmarie Safaris</title>
 </head>
 <body>
+  
+    <header class="header">
+        <div class="header__logo-menu">
+        <div class="header__logo">
+            <h3><a href="/"><img src="{{ url_for('static', filename='icons/black-150.png') }}" alt="" id="logo"></a></h3>
+        </div>
+        <button class="header__menu-toggle" aria-expanded="false" aria-controls="header__menu">
+            <!-- <span class="sr-only">Menu</span> -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </div>
+        <nav class="header__menu" id="header__menu" aria-hidden="true">
+        <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="/">Home</a></li>
+            <li class="header__menu-item"><a href="/trips">Trips</a></li>
+            <li class="header__menu-item"><a href="/destinations">Destinations</a></li>
+            <li class="header__menu-item"><a href="/about">About</a></li>
+            <li class="header__menu-item"><a href="/contact">Contact Us</a></li>
+        </ul>
+        <div class="header__login-register">
+            
+            <a id="soc-icon" href="https:youtube.com" class="header__icons"><i class="fa-brands fa-youtube"></i></a>
+            <a id="soc-icon-fb" href="https:facebook.com" class="header__login"><i class="fa-brands fa-facebook"></i></a>
+            <a  id="soc-icon-insta" href="https:instagram.com" class="header__icons"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        </nav>
+        <div class="header__cart">
+        
+        </div>
+    </header>
     <h3>Delmarie Safaris</h3>
     <p>Travel like Royalty</p>
+
+    <script>
+        const menuToggleBtn = document.querySelector('.header__menu-toggle');
+        const menu = document.querySelector('.header__menu');
+
+        menuToggleBtn.addEventListener('click', function() {
+        menu.classList.toggle('active');
+        menuToggleBtn.classList.toggle('times');
+        });
+    </script>
 </body>
 </html>
