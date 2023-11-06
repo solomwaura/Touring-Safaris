@@ -226,6 +226,9 @@
 #log-btn:hover{
     background-color: var(--orange);
 }
+.content{
+    margin-top: 130px;
+}
 /* Media queries */
 @media screen and (max-width: 768px) {
     .header {
