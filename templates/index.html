@@ -78,6 +78,46 @@
                 </div>
             </div>
         </div>
+        <div class="top-destinations">
+            <h3>Famous Destinations</h3>
+            <div class="destinations">
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/hells.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Hell's Gate</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/central.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Central</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/mombasa.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Mombasa</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/hells.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Hell's Gate</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/hells.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Central</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="cont-why">
             <h2>Why Travel With Delmarie</h2>
             <div class="row-why">
@@ -163,33 +203,75 @@
                 <div class="testimonial">
                     <img src="{{ url_for('static', filename='testimony/user.jpg') }}" alt="User 1">
                     <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-                    <h4 class="testimonial-author">John Doe</h4>
+                    <h4 class="testimonial-author">Lilian N</h4>
                     <p class="testimonial-position">Tourist, Nakuru</p>
                 </div>
                 <div class="testimonial">
                     <img src="{{ url_for('static', filename='testimony/user.jpg') }}" alt="User 1">
                     <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-                    <h4 class="testimonial-author">John Doe</h4>
+                    <h4 class="testimonial-author">John M</h4>
                     <p class="testimonial-position">Tourist, Nakuru</p>
                 </div>
                 <div class="testimonial">
                     <img src="{{ url_for('static', filename='testimony/user.jpg') }}" alt="User 1">
                     <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-                    <h4 class="testimonial-author">John Doe</h4>
+                    <h4 class="testimonial-author">Daudi K</h4>
                     <p class="testimonial-position">Tourist, Nakuru</p>
                 </div>
                 <div class="testimonial">
                     <img src="{{ url_for('static', filename='testimony/user.jpg') }}" alt="User 1">
                     <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-                    <h4 class="testimonial-author">John Doe</h4>
-                    <p class="testimonial-position">Tourist, Nakuru</p>
+                    <h4 class="testimonial-author">Solomon Micro</h4>
+                    <p class="testimonial-position">Tourist, Central</p>
                 </div>
                 <!-- Add more testimonials as needed -->
             </div>
         </div>
+        <div class="top-destinations">
+            <h3>Other Major Destinations</h3>
+            <div class="destinations">
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/hells.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Hell's Gate</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/central.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Central</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/mombasa.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Mombasa</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/hells.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Hell's Gate</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="{{ url_for('static', filename='destinations/hells.jpg') }}" alt="">
+                    <div class="destination-details">
+                        <h4>Central</h4>
+                        <p>12 Tours and Activities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         
         
     </div>
+    {% include 'footer.html' %}
     <script>
         const swiper = new Swiper('.swiper-container', {
             loop: true,

@@ -301,15 +301,9 @@
         border-bottom: 1px solid var(--primary);
         padding-bottom: 10px;
     }
-
-    .header__login-register{
-        padding: 20px 0;
-        
-    }
-    .header__login-register a{
-        display: block;
-    }
-   
+   #logo{
+    display: none;
+   }
     .accounts{
         display: none;
         

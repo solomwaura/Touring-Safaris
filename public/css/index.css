@@ -15,6 +15,7 @@
 .swiper-slide img {
     width: 100%;
     height: 90vh;
+    object-fit: cover;
 }
 
 .hero-content {
@@ -189,6 +190,7 @@ p {
     margin: 3px 0;
 }
 
+/* testimonial section */
 .archive{
     padding: 20px 15px;
 }
@@ -235,4 +237,293 @@ p {
 .testimonial-position {
     font-size: 14px;
     color: #777;
+}
+
+/* destinations */
+
+    .top-destinations{
+        padding: 20px 10px;
+
+    }
+
+    .top-destinations h3{
+        font-size: 18px;
+        text-align: center;
+        padding: 5px;
+        
+    }
+
+    .destinations{
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+
+    .destination {
+        display: block;
+        border-radius: 5px;
+    }
+
+    .destination img{
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .destination-details{
+        padding: 10px 5px;
+
+    }
+    .destination-details h4{
+        font-size: 16px;
+        padding: 3px;
+    }
+    .destination-details p{
+        font-size: 14px;
+        padding: 3px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .content{
+            width: 100%;
+            margin-top: 65px;
+        }
+        .hero{
+            width: 100%;
+            display: none;
+        }
+
+        .swiper-container{
+            width: 100%;
+        }
+        .swiper-slide img {
+            width: 300px;
+            height: 60vh;
+            object-fit: cover;
+        }
+        
+        .hero-content {
+            display: none;
+            z-index: 100;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            margin-top: 6px;
+        }
+        
+        p {
+            font-size: 1rem;
+            margin-top: 4px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+
+        /* upcoming events */
+    .upcomings{
+        padding: 10px 8px;
+
+    }
+    .upcomings h3{
+        font-size: 16px;
+        border-bottom: 3px solid var(--green);
+        padding: 8px 0;
+        width: fit-content;
+    }
+    .upcoming{
+        display: block;
+        padding: 10px;
+    }
+
+    .coming{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .coming img{
+        width: 250px;
+
+    }
+
+    .coming-details{
+        padding: 5px 3px;
+    }
+
+    .coming-details h4{
+        font-size: 14px;
+    }
+
+    .coming-details p{
+        font-size: 12px;
+        margin: 10px auto;
+    }
+    .coming-details a{
+        padding: 8px 12px;
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    
+/* why section */
+    .cont-why {
+        padding: 20px 10px;
+    }
+    .cont-why h2{
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .row-why{
+        padding: 10px;
+        display: block;
+        justify-content: space-around;
+    }
+    .icon-center{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .icon-center .icon{
+        margin: 0 auto;
+        font-size: 40px;
+    }
+
+    .col-item{
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .col-item h3{
+        font-size: 18px;
+        text-align: center;
+        padding: 5px;
+    }
+    .col-item p{
+        text-align: center;
+        padding: 5px;
+    }
+
+    /* atractions section */
+
+.atractions{
+    padding: 15px 5px;
+}
+.atractions h3{
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.atract-top{
+    display: block;
+}
+
+.atracts{
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.atract{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.atract img{
+    width: 150px;
+    height: 150px;
+}
+
+.atract-details{
+    padding: 10px 3px;
+}
+
+.atract-details p{
+    font-size: 12px;
+    padding: 3px;
+}
+.atract-details h4{
+    font-size: 14px;
+}
+
+    .archive{
+        padding: 15px 10px;
+    }
+    .archive h3{
+        font-size: 16px;
+    }
+    
+    .testimonial-section{
+        display: block;
+        padding: 10px;
+    }
+    
+    .testimonial {
+        margin: 15px 0;
+        padding: 10px;
+        max-width: 300px;
+    }
+    
+    
+    .testimonial-text {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .testimonial-author {
+        font-size: 16px;
+    }
+    
+    .testimonial-position {
+        font-size: 12px;
+        color: #777;
+    }
+    /* destinations section */
+
+    .top-destinations{
+        padding: 20px 10px;
+    
+    }
+    
+    .top-destinations h3{
+        font-size: 18px;
+        text-align: center;
+        padding: 5px;
+        
+    }
+    
+    .destinations{
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .destination {
+        display: block;
+        border-radius: 5px;
+    }
+    
+    .destination img{
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .destination-details{
+        padding: 8px 3px;
+    
+    }
+    .destination-details h4{
+        font-size: 14px;
+        padding: 3px;
+    }
+    .destination-details p{
+        font-size: 12px;
+        padding: 2px;
+    }
 }
