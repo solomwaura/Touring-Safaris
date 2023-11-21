@@ -10,47 +10,57 @@
     <title>Delmarie Safaris</title>
 </head>
 <body>
-  
-    <header class="header">
-        <div class="header__logo-menu">
-        <div class="header__logo">
-            <h3><a href="/"><img src="{{ url_for('static', filename='icons/black-150.png') }}" alt="" id="logo"></a></h3>
-        </div>
-        <button class="header__menu-toggle" aria-expanded="false" aria-controls="header__menu">
-            <!-- <span class="sr-only">Menu</span> -->
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        </div>
-        <nav class="header__menu" id="header__menu" aria-hidden="true">
-        <ul class="header__menu-list">
-            <li class="header__menu-item"><a href="/">Home</a></li>
-            <li class="header__menu-item"><a href="/">Trips</a></li>
-            <li class="header__menu-item"><a href="/">Destinations</a></li>
-            <li class="header__menu-item"><a href="/">About</a></li>
-            <li class="header__menu-item"><a href="/">Contact Us</a></li>
-        </ul>
-        <div class="header__login-register">
-            <!-- this is the header file -->
-            
-            <a id="soc-icon" href="https:youtube.com" class="header__icons"><i class="fa-brands fa-youtube"></i></a>
-            <a id="soc-icon-fb" href="https:facebook.com" class="header__login"><i class="fa-brands fa-facebook"></i></a>
-            <a  id="soc-icon-insta" href="https:instagram.com" class="header__icons"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        </nav>
-        <div class="header__cart">
-        
-        </div>
-    </header>
-    <script>
-        const menuToggleBtn = document.querySelector('.header__menu-toggle');
-        const menu = document.querySelector('.header__menu');
 
-        menuToggleBtn.addEventListener('click', function() {
-        menu.classList.toggle('active');
-        menuToggleBtn.classList.toggle('times');
-        });
-    </script>
+<header class="header">
+  <div class="header__logo-menu">
+    <div class="header__logo">
+        <h3><a href="/"><img src="{{ url_for('static', filename='icons/black-150.png') }}" alt="" id="logo"></a></h3>
+    </div>
+    <button class="header__menu-toggle" aria-expanded="false" aria-controls="header__menu">
+      <!-- <span class="sr-only">Menu</span> -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav class="header__menu" id="header__menu" aria-hidden="true">
+    <ul class="header__menu-list">
+        <li class="header__menu-item"><a href="/">Home</a></li>
+        <li class="header__menu-item"><a href="/">Trips</a></li>
+        <li class="header__menu-item"><a href="/">Destinations</a></li>
+        <li class="header__menu-item"><a href="/">About</a></li>
+        <li class="header__menu-item"><a href="/">Contact Us</a></li>
+    </ul>
+    <div class="header__login-register">
+        <a id="soc-icon" href="https:youtube.com" class="header__icons"><i class="fa-brands fa-youtube"></i></a>
+        <a id="soc-icon-fb" href="https:facebook.com" class="header__login"><i class="fa-brands fa-facebook"></i></a>
+        <a  id="soc-icon-insta" href="https:instagram.com" class="header__icons"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </nav>
+  <div class="header__cart">
+    
+    <div class="header__cart-dropdown" id="header__cart" aria-hidden="true">  
+      <!-- Cart items and total here -->
+    </div>
+    
+    <div class="header__cart-dropdown" id="header__cart" aria-hidden="true">
+      <!-- Cart items and total here -->
+    </div>
+    
+    <div class="header__cart-dropdown" id="header__cart" aria-hidden="true">
+      <!-- Cart items and total here -->
+    </div>
+  </div>
+</header>
+
+<script>
+  const menuToggleBtn = document.querySelector('.header__menu-toggle');
+  const menu = document.querySelector('.header__menu');
+  menuToggleBtn.addEventListener('click', function() {
+    menu.classList.toggle('active');
+    menuToggleBtn.classList.toggle('times');
+  });
+</script>
+
 </body>
 </html>

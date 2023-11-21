@@ -284,13 +284,12 @@ p {
     }
 
     @media screen and (max-width: 768px) {
-        .content{
+        /* .content{
             width: 100%;
-            margin-top: 65px;
-        }
+            margin-top: 75px;
+        } */
         .hero{
             width: 100%;
-            display: none;
         }
 
         .swiper-container{

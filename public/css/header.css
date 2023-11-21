@@ -47,7 +47,7 @@
     display: block;
     width: 1.5rem;
     height: 4px;
-    background-color: var(--blue);
+    background-color: var(--green);
     margin: 0.25rem;
     transition: transform 0.3s ease-in-out;
 }
@@ -233,6 +233,9 @@
 }
 /* Media queries */
 @media screen and (max-width: 768px) {
+    .content{
+        margin-top: 80px;
+    }
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -245,11 +248,15 @@
         display: none;
         width: 100%;
     }
+    #logo {
+        height: 50px;
+        width: 50px;
+    }
     .header__menu-toggle {
         display: block;
         border: none;
         border-radius: 4px;
-        background-color: var(--white);
+        background-color: var(--main);
     }
     .header__menu-toggle.times{
         padding: 8px;
@@ -278,7 +285,16 @@
         margin-top: 1rem;
     }
 
-
+    #cart-title{
+        display: inline;
+        color: white;
+    }
+    #cart-title a{
+        text-decoration: none;
+        color: white;
+        padding: 3px;
+        cursor: pointer;
+    }
     .header__cart-dropdown {
         position: static;
         box-shadow: none;
@@ -301,9 +317,15 @@
         border-bottom: 1px solid var(--primary);
         padding-bottom: 10px;
     }
-   #logo{
-    display: none;
-   }
+
+    .header__login-register{
+        padding: 20px 0;
+        
+    }
+    .header__login-register a{
+        display: block;
+    }
+   
     .accounts{
         display: none;
         
@@ -320,16 +342,6 @@
     .account-name{
         padding: 10px 0;
         text-align: left;
-    }
-
-    #dash-btn{
-        padding: 10px 8px;
-        border-radius: 4px;
-    }
-    
-    #log-btn{
-        padding: 10px 8px;
-        border-radius: 4px;
     }
 
 
