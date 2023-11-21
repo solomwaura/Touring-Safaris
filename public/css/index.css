@@ -139,6 +139,7 @@ p {
     font-size: 18px;
     text-align: center;
     padding: 5px;
+    color: var(--green);
 }
 .col-item p{
     text-align: center;
@@ -151,9 +152,10 @@ p {
     padding: 15px 5px;
 }
 .atractions h3{
-    text-align: center;
     font-size: 18px;
-    margin: 5px 0;
+    border-bottom: 5px solid var(--green);
+    width: fit-content;
+    margin: 2px auto;
 }
 
 .atract-top{
@@ -198,6 +200,9 @@ p {
     font-size: 18px;
     padding: 5px 0;
     text-align: center;
+    border-bottom: 5px solid var(--green);
+    margin: 4px auto;
+    width: fit-content;
 }
 
 .testimonial-section{
@@ -214,7 +219,7 @@ p {
     margin: 20px;
     padding: 20px;
     text-align: center;
-    max-width: 300px;
+    width: 300px;
 }
 
 .testimonial img {
@@ -250,6 +255,9 @@ p {
         font-size: 18px;
         text-align: center;
         padding: 5px;
+        border-bottom: 5px solid var(--green);
+        width: fit-content;
+        margin: 2px auto;
         
     }
 
@@ -284,52 +292,47 @@ p {
     }
 
     @media screen and (max-width: 768px) {
-        /* .content{
-            width: 100%;
-            margin-top: 75px;
-        } */
         .hero{
             width: 100%;
+            height: 325px;
         }
 
         .swiper-container{
             width: 100%;
         }
         .swiper-slide img {
-            width: 300px;
-            height: 60vh;
+            width: 100%;
+            height: 300px ;
             object-fit: cover;
         }
         
         .hero-content {
-            display: none;
-            z-index: 100;
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
         }
         
         h3 {
-            font-size: 1.8rem;
-            margin-top: 6px;
+            font-size: 1.2rem;
+            margin-top: 5px;
         }
         
         p {
             font-size: 1rem;
             margin-top: 4px;
+            color: var(--black);
+            font-weight: bold;
         }
         
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 8px 18px;
             margin-top: 10px;
         }
 
         /* upcoming events */
     .upcomings{
-        padding: 10px 8px;
+        padding: 10px 4px;
 
     }
     .upcomings h3{
@@ -339,17 +342,20 @@ p {
         width: fit-content;
     }
     .upcoming{
-        display: block;
-        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        overflow: scroll;
+        padding: 10px 5px;
     }
 
     .coming{
         display: block;
-        margin: 10px 0;
+        margin: 10px;
     }
 
     .coming img{
-        width: 250px;
+        width: 210px;
+        height: 210px;
 
     }
 
@@ -375,10 +381,14 @@ p {
 /* why section */
     .cont-why {
         padding: 20px 10px;
+        background-color: rgb(233, 229, 229);
     }
     .cont-why h2{
         font-size: 16px;
         padding: 5px;
+        border-bottom: 5px solid var(--green);
+        width: fit-content;
+        margin: 2px auto;
     }
 
     .row-why{
@@ -393,6 +403,7 @@ p {
     .icon-center .icon{
         margin: 0 auto;
         font-size: 40px;
+        color: var(--yellow);
     }
 
     .col-item{
@@ -411,77 +422,88 @@ p {
 
     /* atractions section */
 
-.atractions{
-    padding: 15px 5px;
-}
-.atractions h3{
-    font-size: 16px;
-    margin: 5px 0;
-}
+    .atractions{
+        padding: 15px 5px;
+    }
+    .atractions h3{
+        font-size: 16px;
+        border-bottom: 5px solid var(--green);
+        width: fit-content;
+        margin: 2px auto;
 
-.atract-top{
-    display: block;
-}
+    }
 
-.atracts{
-    display: block;
-    padding: 10px;
-    margin: 10px 0;
-}
+    .atract-top{
+        display: block;
+    }
 
-.atract{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-}
-.atract img{
-    width: 150px;
-    height: 150px;
-}
+    .atracts{
+        display: block;
+        padding: 10px;
+        margin: 10px 0;
+    }
 
-.atract-details{
-    padding: 10px 3px;
-}
+    .atract{
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+    .atract img{
+        width: 150px;
+        height: 150px;
+    }
 
-.atract-details p{
-    font-size: 12px;
-    padding: 3px;
-}
-.atract-details h4{
-    font-size: 14px;
-}
+    .atract-details{
+        padding: 10px 3px;
+    }
+
+    .atract-details p{
+        font-size: 12px;
+        padding: 3px;
+    }
+    .atract-details h4{
+        font-size: 14px;
+    }
+
+    /* testimonial section */
 
     .archive{
-        padding: 15px 10px;
+        padding: 15px 5px;
+        width: 100%;
     }
     .archive h3{
-        font-size: 16px;
+        font-size: 14px;
+        width: fit-content;
+        margin: 3px auto;
     }
     
     .testimonial-section{
         display: block;
-        padding: 10px;
+        padding: 10px 5px;
+        width: 100%;
     }
     
+    
     .testimonial {
-        margin: 15px 0;
+        margin: 15px auto;
         padding: 10px;
-        max-width: 300px;
+        width: 100%;
     }
     
     
     .testimonial-text {
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 8px;
     }
     
     .testimonial-author {
-        font-size: 16px;
+        font-size: 14px;
+        color: var(--green);
     }
     
     .testimonial-position {
-        font-size: 12px;
-        color: #777;
+        font-size: 11px;
+        color: var(--yellow);
     }
     /* destinations section */
 
@@ -491,20 +513,21 @@ p {
     }
     
     .top-destinations h3{
-        font-size: 18px;
-        text-align: center;
-        padding: 5px;
+        font-size: 16px;
         
     }
     
     .destinations{
-        display: block;
+        display: flex;
+        justify-content: flex-start;
         margin: 5px 0;
+        overflow: scroll;
     }
     
     .destination {
         display: block;
         border-radius: 5px;
+        margin: 5px 10px;
     }
     
     .destination img{
